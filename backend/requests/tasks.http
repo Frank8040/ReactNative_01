@@ -1,0 +1,30 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+
+###
+GET  {{api}}/5
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "title": "React JS",
+    "description": "Es un framework moderno"
+}
+
+###
+DELETE {{api}}/27
+
+###
+PUT {{api}}/12
+Content-Type: application/json
+
+{
+    "title": "Java",
+    "description": "Es un framework moderno con madurez"
+}
